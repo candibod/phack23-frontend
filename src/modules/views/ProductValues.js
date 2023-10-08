@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";

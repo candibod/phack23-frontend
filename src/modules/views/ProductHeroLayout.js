@@ -49,6 +49,7 @@ function ProductHeroLayout(props) {
             zIndex: -1,
           }}
         />
+        <span sx={{ display: "none" }}>{sxBackground}</span>
         <Box component="img" src={logo} height="16" width="12" alt="arrow down" sx={{ position: "absolute", bottom: 32 }} />
       </Container>
     </ProductHeroLayoutRoot>

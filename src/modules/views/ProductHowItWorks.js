@@ -4,13 +4,11 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import AWS from "aws-sdk";
 
 import { useState } from "react";
 
 function ProductHowItWorks() {
-  const [progress, setProgress] = useState(0);
   const [file, setFile] = useState(null);
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -40,7 +38,6 @@ function ProductHowItWorks() {
     myBucket
       .putObject(params)
       .on("httpUploadProgress", (evt) => {
-        setProgress(Math.round((evt.loaded / evt.total) * 100));
         console.log("sss");
       })
       .send((err) => {
