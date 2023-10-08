@@ -3,7 +3,9 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
-import textract from "../../static/images/aws-textract.png";
+import textract from "../../static/images/textract.png";
+import lambda from "../../static/images/lambda.png";
+import sagemaker from "../../static/images/sage-maker.png";
 
 const item = {
   display: "flex",
@@ -22,25 +24,28 @@ export default function ProductCategories() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <img src={textract} alt="textract"></img>
+              <img src={lambda} alt="lambda" style={{ maxWidth: "100%" }}></img>
+              <Typography variant="h4">Lambda</Typography>
               <Typography variant="h5" align="center" sx={{ mt: 5, mb: 5 }}>
-                Appointment every Wednesday 9am.
+                For serverless computing, ensuring efficient processing of data
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <img src={textract} alt="textract"></img>
+              <img src={textract} alt="textract" style={{ maxWidth: "100%" }}></img>
+              <Typography variant="h4">Textract</Typography>
               <Typography variant="h5" align="center" sx={{ mt: 5, mb: 5 }}>
-                Appointment every Wednesday 9am.
+                Used for accurate text extraction from resumes
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <img src={textract} alt="textract"></img>
+              <img src={sagemaker} alt="sagemaker" style={{ maxWidth: "100%" }}></img>
+              <Typography variant="h4">Sagemaker</Typography>
               <Typography variant="h5" align="center" sx={{ mt: 5, mb: 5 }}>
-                Appointment every Wednesday 9am.
+                Empowering our AI analysis for accurate and relevant insights
               </Typography>
             </Box>
           </Grid>

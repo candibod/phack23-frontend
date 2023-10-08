@@ -5,6 +5,8 @@ import Container from "@mui/material/Container";
 import Button from "../components/Button";
 import Typography from "../components/Typography";
 import AWS from "aws-sdk";
+import Grid from "@mui/material/Grid";
+import { TextareaAutosize } from "@mui/base";
 
 import { useState } from "react";
 
@@ -46,7 +48,10 @@ function ProductHowItWorks() {
   };
 
   return (
-    <Box component="section" sx={{ display: "flex", bgcolor: "secondary.light", overflow: "hidden" }}>
+    <Box component="section" id="uploadFile" sx={{ bgcolor: "secondary.light", overflow: "hidden" }}>
+      <Typography variant="h4" align="center" component="h2" sx={{ textAlign: "center", mt: 8, color: "white" }}>
+        Upload the file & Description
+      </Typography>
       <Container
         sx={{
           mt: 10,
@@ -57,13 +62,18 @@ function ProductHowItWorks() {
           alignItems: "center",
         }}
       >
-        <Typography variant="h4" marked="center" component="h2">
-          Upload the file
-        </Typography>
-        <Button color="secondary" size="large" variant="contained" component="a" onClick={handleUpload} sx={{ mt: 5 }}>
-          Upload
-        </Button>
-        <input type="file" onChange={handleFileChange} />
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <Typography>Job Description</Typography>
+            <TextareaAutosize />
+          </Grid>
+          <Grid item xs={6}>
+            <input type="file" onChange={handleFileChange} />
+            <Button size="large" variant="contained" component="a" onClick={handleUpload} sx={{ mt: 5 }}>
+              Upload
+            </Button>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );

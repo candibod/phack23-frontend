@@ -33,7 +33,7 @@ function ProductValues() {
                 ATS-Friendly Formatting
               </Typography>
               <Typography variant="h5" align="center">
-                {"Improve resume structure and readability for easy ATS parsing."}
+                {"Enhance resume structure and readability for seamless ATS parsing"}
               </Typography>
             </Box>
           </Grid>
@@ -44,7 +44,7 @@ function ProductValues() {
                 Relevancy analysis
               </Typography>
               <Typography variant="h5" align="center">
-                {"Analyze a job posting against your resume to calculate a relevancy score."}
+                {"Assess job postings against your resume, calculating a relevancy score"}
               </Typography>
             </Box>
           </Grid>
@@ -55,7 +55,7 @@ function ProductValues() {
                 AI-powered enhancements
               </Typography>
               <Typography variant="h5" align="center">
-                {"Unlock intelligent insights with tangible recommendations to boost your relevancy score."}
+                {"Valuable insights with actionable items to elevate your resume"}
               </Typography>
             </Box>
           </Grid>

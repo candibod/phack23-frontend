@@ -15,7 +15,9 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, mr: 2 }}></Box>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, mr: 2 }}></Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Button variant="contained">Contained</Button>
+            <Button variant="contained" href="#uploadFile">
+              Get Started
+            </Button>
           </Box>
         </Toolbar>
       </Container>

@@ -23,36 +23,33 @@ function ProductSmokingHero() {
           FAQ's
         </Typography>
       </Button>
-      <Accordion>
+      <Accordion sx={{ pt: 2, pb: 2 }} elevation={0}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
           <Typography>What is an Applicant Tracking Software (ATS)?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</Typography>
+          <Typography>
+            Applicant Tracking Systems (ATS) are software applications used by employers to manage and automate the recruitment and hiring process. These systems help streamline the process by
+            allowing employers to collect, store, and screen large volumes of resumes and job applications
+          </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion sx={{ pt: 2, pb: 2 }} elevation={0}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
-          <Typography>What is an Applicant Tracking Software (ATS)?</Typography>
+          <Typography>What is a relevancy score?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</Typography>
+          <Typography>
+            A relevance score in the context of applicant tracking software is a numerical rating or ranking assigned to job applicants based on their fit or suitability for a specific job opening.
+          </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion sx={{ pt: 2, pb: 2 }} elevation={0}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
-          <Typography>What is an Applicant Tracking Software (ATS)?</Typography>
+          <Typography>How is the relevancy score calculated?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2a-content" id="panel2a-header">
-          <Typography>What is an Applicant Tracking Software (ATS)?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</Typography>
+          <Typography>Our advanced algorithm strategically weighs the frequency of keyword matches in the job listing and evaluates them to your resume for calculation.</Typography>
         </AccordionDetails>
       </Accordion>
     </Container>
