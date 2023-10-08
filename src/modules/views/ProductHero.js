@@ -6,13 +6,7 @@ import image from "../../static/images/2.jpg";
 
 export default function ProductHero() {
   return (
-    <ProductHeroLayout
-      sxBackground={{
-        background: `url(${image})`,
-        backgroundColor: "#7fc7d9", // Average color of the background image.
-        backgroundPosition: "center",
-      }}
-    >
+    <ProductHeroLayout>
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: "none" }} src={image} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">

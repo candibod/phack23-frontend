@@ -8,7 +8,7 @@ import logo from "../../static/images/logo.png";
 
 function ResponsiveAppBar() {
   return (
-    <AppBar sx={{ backgroundColor: "white" }} elevation={0}>
+    <AppBar sx={{ bgcolor: "white" }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img style={{ height: "54px", marginTop: "5px" }} src={logo} alt="increase priority" />

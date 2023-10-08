@@ -24,11 +24,7 @@ const iconStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "warning.main",
   mr: 1,
-  "&:hover": {
-    bgcolor: "warning.dark",
-  },
 };
 
 const LANGUAGES = [
